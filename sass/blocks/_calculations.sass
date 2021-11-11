@@ -1,0 +1,76 @@
+.calculations
+    position: relative
+    padding: 100px 0 219px 0
+    background: #0D0D2B
+    &__title
+        color: #fff
+        text-align: center
+    &__subtitle
+        margin-top: 24px
+        width: 600px
+        margin: 0 auto
+        color: #E0E0E0
+        font-size: 18px
+        line-height: 150%
+        text-align: center
+    &__window
+        position: absolute
+        padding: 48px
+        background: #FBFCFE
+        border-radius: 16px
+        bottom: 0
+        left: 50%
+        transform: translate(-50%, 50%)
+        &-wrapper
+            display: flex
+            align-items: center
+        &-input
+            caret-color: #0D0D2B
+            margin-right: 48px
+            width: 400px
+            border: none
+            border-bottom: 1px solid #E0E0E0
+            background: transparent
+            outline: none
+            &::-webkit-input-placeholder
+                color: #0D0D2B
+                font-size: 20px
+                line-height: 175%
+        &-select
+            position: relative
+            margin-right: 48px
+            color: #0D0D2B
+            display: block
+            width: 200px
+            padding-bottom: 8px
+            border-bottom: 1px solid #E0E0E0
+            font-size: 20px
+            line-height: 150%
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                right: 0
+                top: 50%
+                transform: translate(0, -50%)
+                border: 6px solid transparent
+                border-top: 6px solid #BDBDBD
+        &-descr
+            margin-top: 96px
+            color: #3671E9
+            font-weight: 500
+            font-size: 16px
+            line-height: 150%
+        &-value
+            margin-top: 16px
+            font-weight: bold
+            color: #0D0D2B
+            font-size: 32px
+            line-height: 150%
+            span
+                color: #3671E9
+        &-text
+            margin-top: 4px
+            color: #828282
+            font-size: 16px
+            line-height: 175%

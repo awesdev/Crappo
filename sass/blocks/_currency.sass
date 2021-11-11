@@ -1,0 +1,88 @@
+.currency
+    padding: 316px 0 100px 0
+    background: linear-gradient(180deg, #F8F9FB 0%, #FAFBFF 100%)
+    &__title
+        width: 750px
+        color: #0D0D2B
+        text-align: center
+        margin: 0 auto
+    &__cards
+        margin-top: 64px
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__card
+        background: #FFFFFF
+        text-align: center
+        padding: 48px 24px
+        border-radius: 16px
+        cursor: pointer
+        transition: all .5s ease
+        &:hover
+            background: #2B076E
+            backdrop-filter: blur(250px)
+            .currency__card
+                &-name
+                    color: #fff
+                    span
+                        color: #fff
+                        opacity: 0.7
+                &-text
+                    color: #fff
+                &-btn
+                    width: auto
+                    height: auto
+                    padding: 16px 24px
+                    background: #3671E9
+                    border-radius: 32px
+                    font-weight: 500
+                    font-size: 18px
+                    line-height: 150%
+                    color: #fff
+                    span
+                        display: block
+                        margin-right: 24px
+                    &-wrapper
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        width: 32px
+                        height: 32px
+                        background: #FFFFFF
+                        border-radius: 100%
+                        img
+                            width: 10px
+                            height: 14px
+        &-name
+            color: #0D0D2B
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-top: 48px
+            font-weight: bold
+            font-size: 32px
+            line-height: 150%
+            span
+                color: #BDBDBD
+                font-weight: 500
+                font-size: 18px
+                line-height: 150%
+                margin-left: 8px
+        &-text
+            color: #828282
+            margin-top: 16px
+            width: 320px
+            font-size: 16px
+            line-height: 175%
+        &-btn
+            margin-top: 25px
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 68px
+            height: 68px
+            border: 2px solid rgba(43, 7, 110, 0.2)
+            border-radius: 100%
+            margin: 25px auto 0 auto
+            span
+                display: none

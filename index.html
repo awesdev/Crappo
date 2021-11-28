@@ -8,176 +8,199 @@
     <link rel="shortcut icon" href="img/logo.svg">
     <title>Crappo</title>
     <link rel="stylesheet" href="css/libs/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/libs/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="container header__container">
-            <a class="header__logo" href="/">
-                <img class="header__logo-img" src="img/logo.svg" alt="logo">
-                <img class="header__logo-text" src="img/logo-text.svg" alt="logo-text">
-            </a>
-            <nav class="menu header__menu">
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Products</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Features</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">About</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header__auth">
-                <a class="header__link" href="#">Login</a>
-                <span class="header__auth-line"></span>
-                <a href="#" class="btn btn-blue">Register</a>
+    <div class="wrapper">
+        <header class="header wow fadeInDown">
+            <div class="container header__container">
+                <a class="header__logo" href="/">
+                    <img class="header__logo-img" src="img/logo.svg" alt="logo">
+                    <img class="header__logo-text" src="img/logo-text.svg" alt="logo-text">
+                </a>
+                <nav class="menu header__menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Products</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Features</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__auth">
+                    <a class="header__link" href="#">Login</a>
+                    <span class="header__auth-line"></span>
+                    <a href="#" class="btn btn-blue">Register</a>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <section class="hero">
-        <div class="container hero__container">
-            <div class="hero__info">
-                <div class="hero__stock">
-                    <span class="hero__stock-bg">75% SAVE</span>
-                    <span class="hero__stock-text">For the Black Friday weekend</span>
-                </div>
-                <h1 class="hero__title">Fastest & secure platform to invest in crypto</h1>
-                <h2 class="hero__subtitle">Buy and sell cryptocurrencies, trusted by 10M wallets with over $30 billion
-                    in transactions.</h2>
-                <a href="#" class="btn btn-blue btn-high hero__btn">Try for FREE</a>
-            </div>
-            <img class="hero__img" src="img/hero/bitcoin.png" alt="bitcoin">
-        </div>
-    </section>
-
-    <section class="statistics">
-        <div class="container statistics__container">
-            <div class="statistics__column">
-                <div class="statistics__column-icon">
-                    <img src="img/icons/chart-up.svg" alt="chart-up">
-                </div>
-                <div class="statistics__column-wrapper">
-                    <div class="statistics__column-value">$30B</div>
-                    <div class="statistics__column-text">Digital Currency Exchanged</div>
-                </div>
-            </div>
-            <div class="statistics__column">
-                <div class="statistics__column-icon">
-                    <img src="img/icons/user.svg" alt="user">
-                </div>
-                <div class="statistics__column-wrapper">
-                    <div class="statistics__column-value">10M+</div>
-                    <div class="statistics__column-text">Trusted Wallets Investor</div>
-                </div>
-            </div>
-            <div class="statistics__column">
-                <div class="statistics__column-icon">
-                    <img src="img/icons/earth.svg" alt="earth">
-                </div>
-                <div class="statistics__column-wrapper">
-                    <div class="statistics__column-value">195</div>
-                    <div class="statistics__column-text">Countries Supported</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="calculations">
-        <div class="container calculations__container">
-            <h3 class="title calculations__title">Check how much you can earn</h3>
-            <h3 class="calculations__subtitle">Let’s check your hash rate to see how much you will earn today,
-                Exercitation veniam consequat sunt nostrud amet.</h3>
-            <div class="calculations__window">
-                <div class="calculations__window-wrapper">
-                    <input type="number" class="calculations__window-input" placeholder="Enter your hash rate">
-                    <!-- тут должен быть select, но его нет -->
-                    <span class="calculations__window-select">TH/s</span>
-                    <a href="#" class="btn btn-blue btn-high">Calculate</a>
-                </div>
-                <div class="calculations__window-descr">ESTIMATED 24 HOUR REVENUE:</div>
-                <div class="calculations__window-value">0.055 130 59 ETH <span>($1275)</span></div>
-                <div class="calculations__window-text">Revenue will change based on mining difficulty and Ethereum
-                    price.</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="currency">
-        <div class="container currency__container">
-            <h3 class="title currency__title">Trade securely and market the high growth cryptocurrencies.</h3>
-            <div class="currency__cards">
-                <div class="currency__card">
-                    <img src="img/currency/bitcoin.svg" alt="bitcoin" class="currency__card-img">
-                    <div class="currency__card-name">Bitcoin <span>BTC</span></div>
-                    <div class="currency__card-text">Digital currency in which a record of transactions is maintained.
-                    </div>
-                    <a href="#" class="btn btn-circle currency__card-btn"><span>Start mining</span>
-                        <div class="currency__card-btn-wrapper"><img src="img/icons/arrow-right.svg" alt="arrow-right">
+        <main>
+            <section class="hero">
+                <div class="container hero__container">
+                    <div class="hero__info wow fadeInLeft" data-wow-delay="0.8s">
+                        <div class="hero__stock">
+                            <span class="hero__stock-bg">75% SAVE</span>
+                            <span class="hero__stock-text">For the Black Friday weekend</span>
                         </div>
-                    </a>
+                        <h1 class="hero__title">Fastest & secure platform to invest in
+                            crypto</h1>
+                        <h2 class="hero__subtitle">Buy and sell cryptocurrencies,
+                            trusted by 10M wallets with
+                            over $30
+                            in transactions.</h2>
+                        <a href="#" class="btn btn-blue btn-high hero__btn">Try for
+                            FREE</a>
+                    </div>
+                    <img class="hero__img wow fadeInRight" data-wow-delay="0.8s" src="img/hero/bitcoin.png"
+                        alt="bitcoin">
                 </div>
-                <div class="currency__card">
-                    <img src="img/currency/ethereum.svg" alt="ethereum" class="currency__card-img">
-                    <div class="currency__card-name">Ethereum <span>ETH</span></div>
-                    <div class="currency__card-text">Blockchain technology to create and run decentralized digital
-                        applications.</div>
-                    <div href="#" class="btn btn-circle currency__card-btn"><span>Start mining</span>
-                        <div class="currency__card-btn-wrapper"><img src="img/icons/arrow-right.svg" alt="arrow-right">
-                        </div></a>
+            </section>
+
+            <section class="statistics">
+                <h3 style="display: none;">Statistics</h3>
+                <div class="container statistics__container">
+                    <div class="statistics__column wow fadeInRightBig">
+                        <div class="statistics__column-icon">
+                            <img src="img/icons/chart-up.svg" alt="chart-up">
+                        </div>
+                        <div class="statistics__column-wrapper">
+                            <div class="statistics__column-value">$30B</div>
+                            <div class="statistics__column-text">Digital Currency Exchanged</div>
+                        </div>
+                    </div>
+                    <div class="statistics__column wow fadeInRightBig" data-wow-delay="0.5s">
+                        <div class="statistics__column-icon">
+                            <img src="img/icons/user.svg" alt="user">
+                        </div>
+                        <div class="statistics__column-wrapper">
+                            <div class="statistics__column-value">10M+</div>
+                            <div class="statistics__column-text">Trusted Wallets Investor</div>
+                        </div>
+                    </div>
+                    <div class="statistics__column wow fadeInRightBig" data-wow-delay="1s">
+                        <div class="statistics__column-icon">
+                            <img src="img/icons/earth.svg" alt="earth">
+                        </div>
+                        <div class="statistics__column-wrapper">
+                            <div class="statistics__column-value">195</div>
+                            <div class="statistics__column-text">Countries Supported</div>
+                        </div>
                     </div>
                 </div>
-                <div class="currency__card">
-                    <img src="img/currency/litecoin.svg" alt="litecoin" class="currency__card-img">
-                    <div class="currency__card-name">Litecoin <span>LTC</span></div>
-                    <div class="currency__card-text">Cryptocurrency that enables instant payments to anyone in the
-                        world.</div>
-                    <a href="#" class="currency__card-btn"><span>Start mining</span>
-                        <div class="currency__card-btn-wrapper"><img src="img/icons/arrow-right.svg" alt="arrow-right">
+            </section>
+
+            <section class="calculations">
+                <div class="container calculations__container">
+                    <h3 class="title calculations__title wow fadeInUp">Check how much you can earn</h3>
+                    <h3 class="calculations__subtitle wow fadeInUp" data-wow-delay="0.5s">Let’s check your hash rate to see how much you will earn today,
+                        Exercitation veniam consequat sunt nostrud amet.</h3>
+                    <div class="calculations__window">
+                        <div class="calculations__window-wrapper">
+                            <input type="number" class="calculations__window-input" placeholder="Enter your hash rate">
+                            <!-- тут должен быть select, но его нет -->
+                            <span class="calculations__window-select">TH/s</span>
+                            <a href="#" class="btn btn-blue btn-high">Calculate</a>
                         </div>
-                    </a>
+                        <div class="calculations__window-descr">ESTIMATED 24 HOUR REVENUE:</div>
+                        <div class="calculations__window-value">0.055 130 59 ETH <span>($1275)</span></div>
+                        <div class="calculations__window-text">Revenue will change based on mining difficulty and
+                            Ethereum
+                            price.</div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <section class="feed-back">
-        <div class="container feed-back__container">
-            <div class="feed-back__window">
-                <div class="feed-back__windows-left">
-                    <h3 class="feed-back__window-title">Start mining now</h3>
-                    <h4 class="feed-back__window-subtitle">Join now with CRAPPO to get the latest news and start mining
-                        now
-                    </h4>
+            <section class="currency">
+                <div class="container currency__container">
+                    <h3 class="title currency__title wow fadeInUpBig">Trade securely and market the high growth cryptocurrencies.</h3>
+                    <div class="currency__cards">
+                        <div class="currency__card wow fadeInRightBig" data-wow-delay="0.5s">
+                            <img src="img/currency/bitcoin.svg" alt="bitcoin" class="currency__card-img">
+                            <div class="currency__card-name">Bitcoin <span>BTC</span></div>
+                            <div class="currency__card-text">Digital currency in which a record of transactions is
+                                maintained.
+                            </div>
+                            <a href="#" class="currency__card-btn"><span>Start mining</span>
+                                <div class="currency__card-btn-wrapper"><img src="img/icons/arrow-right.svg"
+                                        alt="arrow-right">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="currency__card wow fadeInRightBig" data-wow-delay="1s">
+                            <img src="img/currency/ethereum.svg" alt="ethereum" class="currency__card-img">
+                            <div class="currency__card-name">Ethereum <span>ETH</span></div>
+                            <div class="currency__card-text">Blockchain technology to create and run decentralized
+                                digital
+                                applications.</div>
+                            <a href="#" class="currency__card-btn"><span>Start mining</span>
+                                <div class="currency__card-btn-wrapper"><img src="img/icons/arrow-right.svg"
+                                        alt="arrow-right">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="currency__card wow fadeInRightBig" data-wow-delay="1.5s">
+                            <img src="img/currency/litecoin.svg" alt="litecoin" class="currency__card-img">
+                            <div class="currency__card-name">Litecoin <span>LTC</span></div>
+                            <div class="currency__card-text">Cryptocurrency that enables instant payments to anyone in
+                                the
+                                world.</div>
+                            <a href="#" class="currency__card-btn"><span>Start mining</span>
+                                <div class="currency__card-btn-wrapper"><img src="img/icons/arrow-right.svg"
+                                        alt="arrow-right">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="feed-back__windows-right">
-                    <input type="email" class="feed-back__window-input" placeholder="Enter your email">
-                    <a href="#" class="btn btn-white feed-back__window-btn">Subscribe</a>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <footer class="footer">
-        <div class="container footer__container">
-            <div class="footer__text">©2021 CRAPPO. All rights reserved</div>
-            <div class="footer__social-links">
-                <img src="img/icons/social/facebook.svg" alt="facebook" class="footer__social-link">
-                <img src="img/icons/social/instagram.svg" alt="instagram" class="footer__social-link">
-                <img src="img/icons/social/youtube.svg" alt="youtube" class="footer__social-link">
-                <img src="img/icons/social/twitter.svg" alt="twitter" class="footer__social-link">
-                <img src="img/icons/social/linkedin.svg" alt="linkedin" class="footer__social-link">
+            <section class="feed-back">
+                <div class="container feed-back__container wow fadeInUpBig">
+                    <div class="feed-back__window">
+                        <div class="feed-back__windows-left">
+                            <h3 class="feed-back__window-title">Start mining now</h3>
+                            <h4 class="feed-back__window-subtitle">Join now with CRAPPO to get the latest news and start
+                                mining
+                                now
+                            </h4>
+                        </div>
+                        <div class="feed-back__windows-right">
+                            <input type="email" class="feed-back__window-input" placeholder="Enter your email">
+                            <a href="#" class="btn btn-white feed-back__window-btn">Subscribe</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__text wow fadeInRightBig" data-wow-delay="0.5s">©2021 CRAPPO. All rights reserved</div>
+                <div class="footer__social-links">
+                    <img src="img/icons/social/facebook.svg" alt="facebook" class="footer__social-link wow fadeInRightBig" data-wow-delay="1s">
+                    <img src="img/icons/social/instagram.svg" alt="instagram" class="footer__social-link wow fadeInRightBig" data-wow-delay="1.5s">
+                    <img src="img/icons/social/youtube.svg" alt="youtube" class="footer__social-link wow fadeInRightBig" data-wow-delay="2s">
+                    <img src="img/icons/social/twitter.svg" alt="twitter" class="footer__social-link wow fadeInRightBig" data-wow-delay="2.5s">
+                    <img src="img/icons/social/linkedin.svg" alt="linkedin" class="footer__social-link wow fadeInRightBig" data-wow-delay="3s">
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+
+    <script src="js/libs/jquery-3.6.0.min.js"></script>
+    <script src="js/libs/wow.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
